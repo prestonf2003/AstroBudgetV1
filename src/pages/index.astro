@@ -14,22 +14,10 @@ let total = 0;
   <main
     class="mx-auto px-4 w-80 max-w-full text-white font-normal text-2xl leading-6"
   >
-    <MoneyField
-      label="Annual Income"
-      onChange={(value) => {
-        income = parseFloat(value);
-        calculateTotal();
-      }}
-    />
+    <MoneyField label="Annual Income" />
     <br />
 
-    <MoneyField
-      label="Largest/Highest Priority Debt"
-      onChange={(value) => {
-        debt = parseFloat(value);
-        calculateTotal();
-      }}
-    />
+    <MoneyField label="Largest/Highest Priority Debt" />
     <br />
     <button
       id="calculateBtn"
